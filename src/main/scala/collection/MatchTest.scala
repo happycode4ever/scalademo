@@ -14,5 +14,10 @@ object MatchTest {
       case _ => println("other")
     }
     println(obj+","+obj.getClass.getCanonicalName)
+
+    val arr = Array(1,2,3,4)
+    arr match {
+      case Array(x,y @ _*) =>println(x,y)
+    }
   }
 }
