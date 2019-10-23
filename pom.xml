@@ -13,6 +13,8 @@
         <groupId>org.scala-lang</groupId>
         <artifactId>scala-library</artifactId>
         <version>2.11.8</version>
+        <!-- 注意生产不需要配scala环境 -->
+        <!--<scope>provided</scope>-->
     </dependency>
 </dependencies>
 <build>
