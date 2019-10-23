@@ -12,4 +12,4 @@ object DiffTest {
     println(v1,v2,v3)
   }
 }
-class A
+//class A
