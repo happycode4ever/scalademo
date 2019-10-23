@@ -30,6 +30,12 @@ object SetTest {
     //&交集 &~差集 ++并集
     val s4 = s2 ++ s1
     println(s4)
+    //交集
+    val ss1 = s2.intersect(s1)
+    //差集 s2-s2
+    val ss2 = s2.diff(s1)
+    //并集
+    val ss3 = s2.union(s1)
   }
 
   def main(args: Array[String]): Unit = {
