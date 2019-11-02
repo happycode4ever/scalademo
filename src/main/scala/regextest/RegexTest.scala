@@ -10,5 +10,11 @@ object RegexTest {
     val res = pattern2.findAllIn(str)
     println(res.mkString(","))
 
+    //匹配ip:host并且提取
+    val host = "192.168.1.1:9300"
+    val regex = "(.+):(\\d+)".r
+    host match {
+      case regex(ip,port) => println(ip,port)
+    }
   }
 }
